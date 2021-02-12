@@ -1,0 +1,90 @@
+*,
+::after,
+::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Times New Roman', Times, serif;
+    background-color: #fff2ff;
+    font-size: 20px;
+}
+
+/* HEADER SECTION */
+.header {
+    max-width: 90rem;
+    padding: 0 50px;
+}
+
+.header-btn{
+    font-size: 30px;
+    cursor: pointer;
+}
+
+button:focus,
+button:active{
+    outline: none;
+    border: none;
+}
+
+.open-btn {
+    position: fixed;
+    left: 20px;
+    top: 20px;
+}
+
+.open-btn,
+.close-btn {
+    background-color: transparent;
+    border: none;
+}
+
+.sidebar {
+    background-color: #fff;
+    width: 50%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    transition: all 0.5s ease-out;
+    transform: translate(-100%);
+}
+
+.show-sidebar{
+    transform: translatey(0);
+}
+
+.sidebar-header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 18px;
+}
+
+.sidebar-listing {
+    list-style: none;
+    padding: 30px 0;
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-gap: 5px;
+}
+
+.sidebar-item {
+    padding: 18px;
+}
+
+.sidebar-link {
+    text-decoration: none;
+    color: #696969;
+}
+
+@media screen and (max-width: 768px) {
+.sidebar {
+    width: 70%;
+}
+}
+
+/* HEADER SECTION */
